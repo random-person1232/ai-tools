@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>AI Resources</title>
+    <link rel="stylesheet" href="searchai_css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <h1>AI Resources</h1>
+    </header>
+    <section>
+        <p>Discover the most essential AI resources that can help you in your AI journey. Whether you are a beginner or an expert, these resources provide valuable insights and tools.</p>
+        <div>
+            <label>
+                <input type="checkbox" id="free-filter"> Show only free tools
+            </label>
+        </div>
+    </section>
+    <section class="resources">
+        <!-- Text AI -->
+        <div class="resource">
+            <div class="category">
+                <h2>Text AI</h2>
+            </div>
+            <div class="button-container">
+                <button class="button" data-free="true" onclick="window.location.href='chatgpt.html'">Visit ChatGPT</button>
+                <button class="button" data-free="false" onclick="window.location.href='jasper.html'">Visit Jasper</button>
+                <button class="button" data-free="true" onclick="window.location.href='writesonic.html'">Visit Writesonic</button>
+            </div>
+        </div>
+        <!-- Image AI -->
+        <div class="resource">
+            <div class="category">
+                <h2>Image AI</h2>
+            </div>
+            <div class="button-container">
+                <button class="button" data-free="true" onclick="window.location.href='dalle.html'">Visit DALL·E 3</button>
+                <button class="button" data-free="false" onclick="window.location.href='midjourney.html'">Visit Midjourney</button>
+                <button class="button" data-free="true" onclick="window.location.href='stablediffusion.html'">Visit Stable Diffusion</button>
+            </div>
+        </div>
+        <!-- Video AI -->
+        <div class="resource">
+            <div class="category">
+                <h2>Video AI</h2>
+            </div>
+            <div class="button-container">
+                <button class="button" data-free="true" onclick="window.location.href='lumen5.html'">Visit Lumen5</button>
+                <button class="button" data-free="true" onclick="window.location.href='kapwing.html'">Visit Kapwing</button>
+                <button class="button" data-free="false" onclick="window.location.href='synthesia.html'">Visit Synthesia</button>
+            </div>
+        </div>
+        <!-- Speech AI -->
+        <div class="resource">
+            <div class="category">
+                <h2>Speech AI</h2>
+            </div>
+            <div class="button-container">
+                <button class="button" data-free="true" onclick="window.location.href='murf.html'">Visit Murf AI</button>
+                <button class="button" data-free="false" onclick="window.location.href='descript.html'">Visit Descript</button>
+                <button class="button" data-free="false" onclick="window.location.href='lovo.html'">Visit Lovo AI</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="play-button-container">
+        <button class="button" onclick="document.getElementById('background-music').play()">Play Music</button>
+        <div class="made-by">Made by Neutrin05</div>
+    </div>
+    <audio id="background-music" loop>
+        <source src="Chill Piano Electronic Music (For Videos) - Home by Neutrin05.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="searchai_js.js"></script>
+</body>
+</html>
+

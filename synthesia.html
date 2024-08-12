@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Synthesia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin: 3rem auto;
+            max-width: 900px;
+            padding: 2rem;
+            color: #333;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin: 1.5rem 0;
+        }
+
+        button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 30px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 1.5rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes moveShape {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .shape {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 123, 255, 0.3);
+            border-radius: 50%;
+            animation: moveShape 5s infinite;
+        }
+
+        .shape1 { top: 10%; left: 20%; }
+        .shape2 { top: 40%; left: 60%; }
+        .shape3 { top: 70%; left: 30%; }
+
+        iframe {
+            display: block;
+            margin: 2rem auto;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 560px;
+        }
+    </style>
+</head>
+<body>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <header>
+        <h1>Synthesia</h1>
+    </header>
+    <section>
+        <p>Synthesia is a video generation platform that uses AI to create videos with realistic talking avatars.</p>
+        <div>
+            <button onclick="window.open('https://www.synthesia.io/', '_blank')">Go to Synthesia</button>
+        </div>
+        <div>
+            <h2>Learn More</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GJsY-wrLh9s" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="play-button-container">
+            <button class="button" onclick="document.getElementById('background-music').play()">Play Music</button>
+            <div class="made-by">Made by Neutrin05</div>
+        </div>
+        <audio id="background-music" loop>
+            <source src="Chill Piano Electronic Music (For Videos) - Home by Neutrin05.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+</body>
+</html>
